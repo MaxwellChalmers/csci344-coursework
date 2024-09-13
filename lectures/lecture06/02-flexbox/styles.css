@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    flex-grow: 13213213;
+}
+
+section {
+    border: solid 4px orangered;
+    width: 200px;
+    height: 75px;
+}

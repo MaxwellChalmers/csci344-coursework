@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+
+body {
+    font-family: "Noto Sans Symbols 2", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header { 
+    background-color: yellow;
+    padding: 40px;
+
+}
+
+section{
+    border-width: 40 px;
+    border-style: ridge;
+    display: inline-block;
+    padding: 2px;
+    margin: 20px;
+    box-shadow: -6px -6px 5px gray inset, 6px 6px 5px  gray inset;
+    
+}
+
+main {
+    background-color: rgb(243, 230, 230);
+}
+#red {
+    background-color: red;
+}
+/* Your code here */

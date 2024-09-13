@@ -1,3 +1,52 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 270px 100px;
+    border: 1px grey solid;
+    margin: 10px;
+    padding: 15px;
+    
+}
+
+img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+    
+}
+h2{
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+p{
+    margin-bottom: 30px;
+}
+p, span {
+    color: darkgray;
+   
+}
+
+span{
+    margin-bottom: 5px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: auto;
+}
+
+

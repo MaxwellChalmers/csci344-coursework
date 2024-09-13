@@ -11,4 +11,34 @@ body {
     margin: 0;
 }
 
+main * {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    
+}
+section * {
+    height: fit-content;
+    color: aquamarine;   
+}
+
+
+#home, #home *{ 
+    background-color: bisque;
+    color: black;
+}
+
+#bio {
+    background-color: blueviolet;
+}
+#portfolio {
+    background-color: yellowgreen;
+}
+#contact {
+    background-color: hotpink;
+}
+
 /* create additional rules below:  */

@@ -127,6 +127,18 @@ main {
 
 }
 
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 35vw;
+}
+
+input::placeholder{
+    color: grey;
+}
+
+
 #Suggestions>header{
     display: flex;
     flex-direction: row;
@@ -218,6 +230,7 @@ main {
 
 #recommended-users{
     background-color: #8FCB9B;
+    width: 100%;
 }
 
 #recommended-users img{
@@ -230,7 +243,7 @@ main {
     grid-template-columns: 50px auto 80px;
     gap: 30px;
     align-items: center;
-    padding: 10px
+    padding: 10px;
 }
 #recommended-users h2, p{
     font-size: medium;

@@ -30,8 +30,8 @@ article
     color: #41521F;
 }
 
-#Stories{
-    background-color: #CBBAED;
+#stories{
+    background-color: #4e4159;
 }
 
 article, section{
@@ -41,38 +41,49 @@ article, section{
     
 }
 article{
-    padding-bottom: 17px;
+    padding-bottom: 10px;
 }
 
 
-h1, #logotext {
+h1, #logo-text {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
   }
+  
+#logo-text{
+    color: #F8DE7E;
+}
 #write-comment{
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 0px;
+    padding: 0x;
+    padding-top: 10px;
     justify-content: space-between;
+    border-top: solid thin #8FCB9B;
 }
 #comment-input{
     display: flex;
     flex-direction: row;
+    padding-left: 0px;
 }
 #comment-input>*{
     margin-left:10px;
     align-self: center;
 }
-#comment-input input{
-
-
-}
 
 #discusion>*{
     margin-top: 12px;
+    
 }
+
+#discusion div{
+    border-top: dotted #8FCB9B;
+
+}
+
 
 #time-posted{
     font-weight: 100;
@@ -104,7 +115,7 @@ aside{
 main {
     display: flex;
     position: relative;
-    top: 100px;
+    top: 80px;
     
     width: 60vw;
     margin-left: 10vw;
@@ -139,12 +150,12 @@ input::placeholder{
 }
 
 
-#Suggestions>header{
+#suggestions>header{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#Suggestions>header>h1 {
+#suggestions>header>h1 {
     margin-left: 20px;
 }
 
@@ -168,7 +179,7 @@ input::placeholder{
     margin-left: 20px;
     border: none;
     color: #FCD581;
-    background-color: #694873;
+    background-color: #7768AE;
 } 
 
 #navigation>button:hover{
@@ -179,12 +190,12 @@ input::placeholder{
     color: darkred;
 }
 
-.logo #logoimage{
+.logo #logo-image{
     display: none;
     width: 80px;
     height: auto;
 } 
-.logo #logotext{
+.logo #logo-text{
     font-weight: bolder;
 }
 
@@ -256,12 +267,12 @@ a{
     text-decoration: none;
 }
 
-#Stories{
+#stories{
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-#Stories div{
+#stories div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,12 +281,12 @@ a{
     margin-left: 5px;
 }
 
-#Stories div>*{
+#stories div>*{
     font-weight: 200;
     font-size: x-small;
 }
 
-#Stories img{
+#stories img{
     height: 50px;
     width: 50px;
     justify-self: center;
@@ -318,14 +329,21 @@ a{
 
 @media (max-width: 500px){
    
-    .logo #logotext{
+    .logo #logo-text{
         display:none
     } 
-    .logo #logoimage{
+    .logo #logo-image{
         display: block;
         position: absolute;
         top: 0;
         right: 83%;
+    }
+}
 
+@media (max-width: 1070px){
+    #recommended-users div{
+        grid-template-columns: 50px auto;
+        grid-template-rows: 1px;
+        height: 70px;
     }
 }

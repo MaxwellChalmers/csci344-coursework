@@ -134,3 +134,11 @@ h1 {
 .high-contrast button {
     color: black;
 }
+
+.ruin * {
+    background-color: white;
+    color: white;
+    border: white;
+    position: absolute;
+    bottom: 200vh;
+}

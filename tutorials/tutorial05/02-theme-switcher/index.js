@@ -1,19 +1,25 @@
-const defaultTheme = ev => {
-    // your code here.
+const defaultTheme = (ev) => {
+  let b = document.querySelector("body");
+  b.className = "";
+};
+const oceanTheme = (ev) => {
+  let b = document.querySelector("body");
+  b.className = "ocean";
 };
 
-const oceanTheme = ev => {
-   // your code here.
+const desertTheme = (ev) => {
+  let b = document.querySelector("body");
+  b.className = "desert";
 };
 
-const desertTheme = ev => {
-   // your code here.
+const highContrastTheme = (ev) => {
+  let b = document.querySelector("body");
+  b.className = "high-contrast";
 };
-
-const highContrastTheme = ev => {
-    // your code here.
-}; 
-
+const ruinTheme = (ev) => {
+  let b = document.querySelector("body");
+  b.className = "ruin";
+};
 /*
     Hints: 
     1. Attach the event handlers (functions) above to the click event

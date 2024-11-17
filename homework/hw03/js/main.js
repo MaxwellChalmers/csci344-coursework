@@ -74,7 +74,7 @@ window.redrawButton = async function (button, id) {
 function renderFollowRecomendations() {
   let recomentdationsHTML = ``;
   function renderRec(account) {
-    recomentdationsHTML += `<section class="flex justify-around items-center mb-4 gap-2">
+    recomentdationsHTML += `<section class="flex justify-around items-center mb-4 gap-4">
                 <img src="${account.thumb_url}" class="rounded-full" alt="${account.username}'s profile picture"/>
                 <div class="w-[180px]">
                     <p class="font-bold text-sm">${account.username}</p>
@@ -93,7 +93,7 @@ function renderStories() {
 `;
   function renderStory(story) {
     storiesHTML += `<div class="flex flex-col justify-center items-center">
-                <img src="${story.user.thumb_url}" class="rounded-full border-4 border-gray-300" alt="${story.user.username}'s story picture"/>
+                <img src="${story.user.thumb_url}" class="min-w-[50px] min-h-[50px] rounded-full border-4 border-gray-300 object-cover" alt="${story.user.username}'s story picture"/>
                 <p class="text-xs text-purple-900">${story.user.username}</p>
             </div>`;
   }

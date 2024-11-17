@@ -3,8 +3,8 @@ import React from "react";
 export default function NavBar({ username }) {
     // This component is implemented for you:
     return (                                            //asked chatgpt how to do this. 
-        <nav className="flex justify-between py-5 px-9 bg-gradient-to-bl from-pink-300 via-gray-300 to-purple-200 border-b fixed w-full top-0">
-            <h1 className="font-Comfortaa font-bold text-2xl">Photo App</h1>
+        <nav className="flex rainbow-border justify-between py-5 px-9 bg-gradient-to-bl from-pink-300 via-gray-300 to-purple-200 border-b fixed w-full top-0">            
+        <h1 className="font-Comfortaa font-bold text-2xl">Photo App</h1>
             <ul className="flex gap-4 text-sm items-center justify-center">
                 <li>
                     <span>{username}</span>

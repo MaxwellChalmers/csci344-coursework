@@ -2,6 +2,8 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { getAccessToken } from "./server-requests.jsx";
 import App from "./components/App.jsx";
+import "./css/styles.css";
+import "./css/input.css";
 
 async function main() {
     // this script kicks off the React App:

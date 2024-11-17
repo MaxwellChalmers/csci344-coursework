@@ -5,6 +5,7 @@
     "dev": "concurrently \"tailwindcss -i ./src/css/input.css -o public/output.css --watch\" \"vite dev\""
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.0",
     "concurrently": "*",
     "tailwindcss": "*",
     "vite": "*"

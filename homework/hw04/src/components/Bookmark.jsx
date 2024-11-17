@@ -5,17 +5,12 @@ export default function Bookmark({ token, isBookmarked, postID}){
 	const[stateBookmarkID, setStateBookmarkID] = useState(isBookmarked);
 
 	async function createBookmark() {	
-		const sendData = {
-			post_id: postID,
-		};
+		const sendData = {post_id: postID,};
 		const respData = await postDataToServer(token, "/api/bookmarks/", sendData);
 		setStateBookmarkID(respData.id);
-
 	}
 	async function deleteBookmark() {
-		const sendData = {
-			post_id: postID,
-		};
+		const sendData = { post_id: postID,};
 		const respData = await deleteDataFromServer(token, "/api/bookmarks/" + stateBookmarkID, sendData);
 		setStateBookmarkID(null);
 	}

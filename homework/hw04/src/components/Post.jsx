@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState }  from "react";
+import { getDataFromServer } from "../server-requests.jsx";
 import Bookmark from "./Bookmark.jsx"
 import Like from "./Like.jsx"
 
-export default function Post ({postData, token}) {
-	return (
+
+export default function Post ({postData, refresh, token}) {
+    
+    const[post, setPost ] = useState(postData);
+    
+    async function getPost() {
+        const data = await getDataFromServer(token, "/api/posts/" + postData.id);
+        console.log(data);
+        setPost(data);
+    }
+    
+    return (
 		<section className="bg-white border mb-10">
 			<div className="p-4 flex justify-between">
                     <h3 className="text-lg font-Comfortaa font-bold"> {postData.user.username} </h3>
@@ -16,7 +27,7 @@ export default function Post ({postData, token}) {
                     <div className="flex justify-between text-2xl mb-3">
                         <div className="flex gap-2"> 
 		
-							<Like isLiked={postData.current_user_like_id} postID={postData.id} token={token}/>
+							<Like refresh={getPost} isLiked={postData.current_user_like_id} postID={postData.id} token={token}/>
                             <button aria-label="comment button" ><i className="far fa-comment"></i></button>
                             <button aria-label="share button"><i className="far fa-paper-plane"></i></button>
                         </div>

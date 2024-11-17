@@ -604,6 +604,18 @@ video {
   display: none;
 }
 
+.h-\[80px\]{
+  height: 80px;
+}
+
+.h-\[30px\]{
+  height: 30px;
+}
+
+.min-h-\[50px\]{
+  min-height: 50px;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -616,8 +628,28 @@ video {
   width: 100%;
 }
 
+.w-\[80px\]{
+  width: 80px;
+}
+
+.w-\[30px\]{
+  width: 30px;
+}
+
 .min-w-\[80\%\]{
   min-width: 80%;
+}
+
+.min-w-4{
+  min-width: 1rem;
+}
+
+.min-w-\[80px\]{
+  min-width: 80px;
+}
+
+.min-w-\[50px\]{
+  min-width: 50px;
 }
 
 .max-w-\[300px\]{
@@ -626,6 +658,10 @@ video {
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -638,6 +674,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
 }
 
 .gap-2{
@@ -691,11 +731,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gradient-to-bl{
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
@@ -717,6 +752,11 @@ video {
 
 .bg-cover{
   background-size: cover;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2{
@@ -808,19 +848,29 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
-.text-green-900{
-  --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity, 1));
-}
-
-.text-red-600{
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
-}
-
 .text-red-700{
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-900{
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+}
+
+.text-red-900{
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-900{
+  --tw-text-opacity: 1;
+  color: rgb(113 63 18 / var(--tw-text-opacity, 1));
+}
+
+.text-violet-900{
+  --tw-text-opacity: 1;
+  color: rgb(76 29 149 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus{

@@ -1,0 +1,7 @@
+@layer utilities {
+  .rainbow-border {
+    border-bottom-width: 100px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(45deg, blue, indigo, violet, blue, indigo) 10;
+  }
+}

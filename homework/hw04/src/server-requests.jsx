@@ -25,7 +25,7 @@ export async function getDataFromServer(token, url) {
         },
     });
     const data = await response.json();
-    //console.log(data);
+    console.log(data);
     return data;
 }
 

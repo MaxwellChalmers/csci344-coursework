@@ -20,13 +20,13 @@ export default function Suggestion({ account, token, ID}) {
 	}
 	
 	return (
-		<section class="flex justify-around items-center mb-4 gap-4">
+		<section className="flex justify-around items-center mb-4 gap-4" >
 					<img src={account.thumb_url} className="rounded-full" alt={`${account.username}'s profile picture`} />
-					<div class="w-[180px]">
-						<p class="font-bold text-sm">{account.username}</p>
-						<p class="text-red-900 text-xs">suggested for you</p>
+					<div className="w-[180px]">
+						<p className="font-bold text-sm">{account.username}</p>
+						<p className="text-red-900 text-xs">suggested for you</p>
 					</div>
-					<button class="text-yellow-900 text-sm py-2 min-w-[80px]" onClick={onClick} aria-label="follow button"> {isFollowed ? "unfollow" : "follow  "}</button>
+					<button className="text-yellow-900 text-sm py-2 min-w-[80px]" onClick={onClick} aria-label="follow button"> {isFollowed ? "unfollow" : "follow  "}</button>
 		</section>  
     );
 }

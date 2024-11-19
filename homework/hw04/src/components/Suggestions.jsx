@@ -18,7 +18,7 @@ export default function Suggestions({ token }) {
     []);
 
     function outputSuggestion(account){
-        return <Suggestion account={account} token={token}/>;
+        return <Suggestion account={account} token={token} key={account.id}/>;
     }
 
     return (
